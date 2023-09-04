@@ -81,7 +81,7 @@ while True:
 
     if copokazuje == 'menu':
         napisz("nacisnij spacje zeby zaczac", 80, 150, 20)
-        logo = pygame.image.load(os.path.join('heli.png'))
+        logo = pygame.image.load(os.path.join('heli2.png'))
         screen.blit(logo, (100, 130))
     elif copokazuje == 'rozgrywka':
         for p in przeszkody:
@@ -99,7 +99,7 @@ while True:
         napisz(str(punkty), 25, 50, 20)
     elif copokazuje == 'koniec':
         napisz("przegrales lamusie, nacisnij spacje zeby sprobowac ponownie", 80, 150, 20)
-        napisz('twoj rynik to: ' + str(punkty), 50, 320, 20)
+        napisz('twoj wynik to: ' + str(punkty), 50, 320, 20)
         logo = pygame.image.load(os.path.join('heli.png'))
         screen.blit(logo, (100, 130))
     pygame.display.update()
